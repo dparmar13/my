@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Shivu Bby ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #c471ed);
+    overflow-x: hidden;
+    color: white;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Floating hearts */
+.heart {
+    position: fixed;
+    font-size: 22px;
+    animation: float 6s linear infinite;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   FIRST SCREEN
+========================= */
+
+#welcomeScreen {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.welcome-box {
+    position: relative;
+    z-index: 2;
+    padding: 45px 25px;
+    max-width: 600px;
+    width: 100%;
+    animation: fadeIn 1.5s ease;
+}
+
+.welcome-title {
+    font-size: clamp(38px, 10vw, 72px);
+    font-weight: 800;
+    line-height: 1.15;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    margin-bottom: 35px;
+}
+
+.welcome-title span {
+    display: block;
+}
+
+.continue-btn {
+    border: none;
+    background: rgba(255,255,255,0.95);
+    color: #d63384;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.continue-btn:hover {
+    transform: scale(1.08);
+}
+
+/* =========================
+   GIFT SCREEN
+========================= */
+
+#giftScreen {
+    display: none;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 600px;
+    padding: 35px 25px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.35);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+.gift {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.question {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    position: relative;
+    min-height: 60px;
+}
+
+button {
+    border: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.yes-btn {
+    background: #fff;
+    color: #d63384;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.yes-btn:hover {
+    transform: scale(1.08);
+}
+
+.no-btn {
+    background: rgba(255,255,255,0.3);
+    color: white;
+    position: relative;
+}
+
+/* Letter */
+
+.letter {
+    display: none;
+    text-align: left;
+    animation: fadeIn 1s ease;
+}
+
+.letter h1 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.letter p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.signature {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    .welcome-title {
+        font-size: 45px;
+    }
+
+    .question {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    .letter p {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+<div class="heart" style="left:5%; animation-delay:0s;">❤️</div>
+<div class="heart" style="left:20%; animation-delay:2s;">💗</div>
+<div class="heart" style="left:40%; animation-delay:4s;">💕</div>
+<div class="heart" style="left:60%; animation-delay:1s;">💖</div>
+<div class="heart" style="left:80%; animation-delay:3s;">💘</div>
+<div class="heart" style="left:92%; animation-delay:5s;">❤️</div>
+
+
+<!-- =========================
+     SCREEN 1
+     ONLY BIRTHDAY MESSAGE
+========================= -->
+
+<section id="welcomeScreen" class="screen">
+
+    <div class="welcome-box">
+
+        <div class="welcome-title">
+            <span>Happy Birthday</span>
+            <span>My Love ❤️</span>
+        </div>
+
+        <button class="continue-btn" onclick="showGiftScreen()">
+            Continue ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SCREEN 2
+     EXISTING GIFT PAGE
+========================= -->
+
+<section id="giftScreen" class="screen">
+
+    <div class="card">
+
+        <!-- Gift question -->
+        <div id="giftQuestion">
+
+            <div class="gift">🎁</div>
+
+            <div class="question">
+                Do you want a gift? 🥹❤️
+            </div>
+
+            <div class="buttons">
+
+                <button class="yes-btn" onclick="openLetter()">
+                    YES ❤️
+                </button>
+
+                <button class="no-btn" id="noButton">
+                    NO 😏
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Birthday letter -->
+        <div class="letter" id="letter">
+
+            <h1>
+                Happy Birthday, Shivu Bby! 🎂❤️
+            </h1>
+
+            <p>
+                Mughe ni pta aap kaise mere liye kb itne important ban gye.
+                You just feel like a home for me.
+                You are my love my best friend, my well-wisher, my love...
+                My everything ❤️.
+            </p>
+
+            <p>
+                Kabhi kabhi sochti hoon ki aap meri life mein aaye kaise...
+                aur phir lagta hai shayad meri life ko aapki hi zarurat thi. 🥹❤️
+            </p>
+
+            <p>
+                You are my safe place, my favourite notification,
+                my favourite person, and also the person who irritates me
+                the most. 😂❤️
+            </p>
+
+            <p>
+                Aap mere favourite notification ho, favourite person ho,
+                aur unfortunately... favourite irritant bhi ho. 😂❤️
+            </p>
+
+            <p>
+                Thank you for being there, for listening to me,
+                for understanding me, and for making even normal days
+                feel special. ❤️
+            </p>
+
+            <p>
+                Keep smiling, keep shining...
+                please stay the same little pagal who somehow stole my heart. 🥹❤️
+            </p>
+
+            <p>
+                I just want you to know that you are genuinely very
+                special to me, and I hope this new year of your life
+                brings you lots of happiness, success, love and everything
+                you wish for. ❤️✨
+            </p>
+
+            <p>
+                Happy Birthday once again, my Shivu Bby! 🎂❤️
+            </p>
+
+            <div class="signature">
+                Love youuuuuuuuu! 💋💗
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* =========================
+   GO TO SECOND SCREEN
+========================= */
+
+function showGiftScreen() {
+
+    document.getElementById("welcomeScreen").style.display = "none";
+
+    document.getElementById("giftScreen").style.display = "flex";
+}
+
+
+/* =========================
+   YES BUTTON
+========================= */
+
+function openLetter() {
+
+    document.getElementById("giftQuestion").style.display = "none";
+
+    document.getElementById("letter").style.display = "block";
+
+    createConfetti();
+}
+
+
+/* =========================
+   ESCAPING NO BUTTON
+========================= */
+
+const noButton = document.getElementById("noButton");
+
+const messages = [
+    "Nope 😂",
+    "Try again 😏",
+    "You can't click me 😂",
+    "Are you sure? 🥺",
+    "Nice try 😌",
+    "Hehe no! 😂❤️",
+    "Click YES already 😭"
+];
+
+let messageIndex = 0;
+
+noButton.addEventListener("mouseover", moveNoButton);
+noButton.addEventListener("touchstart", moveNoButton);
+
+function moveNoButton() {
+
+    const card = document.querySelector(".card");
+
+    const maxX = Math.max(0, card.clientWidth - 130);
+    const maxY = 150;
+
+    const randomX = Math.random() * maxX - maxX / 2;
+    const randomY = Math.random() * maxY - maxY / 2;
+
+    noButton.style.transform =
+        `translate(${randomX}px, ${randomY}px)`;
+
+    noButton.innerText =
+        messages[messageIndex % messages.length];
+
+    messageIndex++;
+}
+
+
+/* =========================
+   CONFETTI / HEARTS
+========================= */
+
+function createConfetti() {
+
+    const emojis = ["❤️", "💖", "💕", "💗", "💘", "✨", "🎉"];
+
+    for (let i = 0; i < 40; i++) {
+
+        const confetti = document.createElement("div");
+
+        confetti.innerText =
+            emojis[Math.floor(Math.random() * emojis.length)];
+
+        confetti.style.position = "fixed";
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.top = "-30px";
+        confetti.style.fontSize =
+            (15 + Math.random() * 20) + "px";
+        confetti.style.zIndex = "999";
+        confetti.style.pointerEvents = "none";
+
+        document.body.appendChild(confetti);
+
+        const duration =
+            2 + Math.random() * 3;
+
+        confetti.animate(
+            [
+                {
+                    transform: "translateY(0) rotate(0deg)",
+                    opacity: 1
+                },
+                {
+                    transform:
+                        `translateY(110vh) rotate(${Math.random() * 720}deg)`,
+                    opacity: 0
+                }
+            ],
+            {
+                duration: duration * 1000,
+                easing: "linear"
+            }
+        );
+
+        setTimeout(() => {
+            confetti.remove();
+        }, duration * 1000);
+    }
+}
+
+</script>
+
+</body>
+</html>
